@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-bg: #022342;
+  --sub-bg: #34adf6;
+  --sub-deep-bg: #1e91d8;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header section design started from here */
+#headerSection {
+  background-color: var(--main-bg);
+  padding: 5px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#headerRightRightSection img {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+#headerRightLeftSection ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+#headerRightLeftSection ul li {
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#headerRightLeftSection ul li:hover,
+#headerRightRightSection div i:hover,
+#headerRightRightSection img:hover {
+  cursor: pointer;
+}
+
+#headerRightLeftSection ul li:first-child {
+  color: var(--sub-bg);
+}
+
+#headerRightRightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 0 0 20px;
+  border-left: 1px solid #0a4377;
+}
+
+#headerRightRightSection div {
+  position: relative;
+}
+
+#headerRightRightSection div i {
+  color: white;
+  font-size: 14px;
+}
+
+#headerRightRightSection div p {
+  height: 7px;
+  width: 7px;
+  border-radius: 10px;
+  background-color: var(--sub-bg);
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+#headerRightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* carousel section started from here */
+#carouselSection {
+  height: 525px;
+  background-image: url("./assets/girlbg.jpg");
+  background-size: cover;
+  object-fit: cover;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+}
+
+#carouselLeftSection {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#carouselBadges {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+#carouselBadges p {
+  height: 6px;
+  width: 6px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+}
+
+#carouselBadges p:first-child {
+  background-color: #707070;
+}
+
+#carouselLeftSection div h1 {
+  color: white;
+  font-size: 50px;
+}
+#carouselLeftSection div:first-child p {
+  color: rgb(209, 209, 209);
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  width: 500px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+#carouselLeftSection div:first-child button {
+  background-color: var(--sub-bg);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+#carouselLeftSection div:first-child button:hover {
+  cursor: pointer;
+  background-color: var(--sub-deep-bg);
+  transition: all 0.2s;
+}
+
+/* carousel bottom section started from here */
+#carouselBottomSection {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg);
+}
+#carouselBottomLeftSection {
+  width: 75%;
+  height: 70px;
+  background-color: var(--sub-bg);
+  clip-path: polygon(0 0, 98.4% 0, 100% 50%, 98.4% 100%, 0 100%);
+  padding-left: 70px;
+}
+#carouselBottomRightSection {
+  width: 25%;
+  background-color: var(--main-bg);
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+#carouselBottomLeftSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#carouselBottomLeftSection input {
+  border: 1px solid white;
+  outline: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  caret-color: rgb(110, 110, 110);
+  font-family: "Poppins", sans-serif;
+  margin-left: 20px;
+  width: 200px;
+}
+#carouselBottomLeftSection input:focus {
+  border: 1px solid #1c83c4;
+}
+
+#carouselBottomLeftSection div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+#carouselBottomLeftSection div:hover {
+  cursor: pointer;
+}
+
+#carouselBottomLeftSection div p {
+  font-size: 13.5px;
+  user-select: none;
+}
+#carouselBottomLeftSection div i {
+  font-size: 13px;
+}
+
+#carouselBottomRightSection button {
+  background-color: var(--sub-bg);
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+#carouselBottomRightSection button:hover {
+  cursor: pointer;
+  background-color: var(--sub-deep-bg);
+  transition: all 0.2s;
+}
+
+#featuresSection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  padding: 70px;
+}
+
+#featuresRightSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+#featuresLeftSection,
+#featuresRightSection {
+  width: 100%;
+}
+
+#featuresLeftSection h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+}
+
+#featuresLeftSection p {
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  margin-top: 22px;
+}
+
+#featureSection {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+#featureSection div i {
+  font-size: 22px;
+}
+#featureSection div:last-child h3 {
+  font-size: 13px;
+  color: rgb(85, 85, 85);
+}
+#featureSection div:last-child p {
+  font-size: 13px;
+  color: rgb(85, 85, 85);
+}
